@@ -1,4 +1,4 @@
-每小时检查Titan Network验证者是否入犹并进行解除处理
+每小时检查Titan Network验证者是否入狱并进行解除处理
 
 
 chmod +x unjail_checker.sh
