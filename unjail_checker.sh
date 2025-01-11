@@ -18,7 +18,7 @@ while true; do
     STATUS=$(titand query staking validator $VALIDATOR_ADDRESS -o json | jq -r '.validator.status')
 
     # 检查是否为 jailed 状态
-    if [ "$STATUS" -eq 3 ]; then
+    if [ "$STATUS" -eq 2 ]; then
         echo "$(date): Validator is jailed. Attempting to unjail..." | tee -a $LOG_FILE
 
         # 执行 unjail
